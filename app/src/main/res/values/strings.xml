@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">User Details Viewing App</string>
+    <string name="enter_username">Enter your username/email</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="login">Login</string>
+    <string name="sign_in">Sign In</string>
+    <string name="user_details">user details</string>
+    <string name="horizontal">horizontal</string>
+    <string name="vertical">vertical</string>
+    <string name="username">username</string>
+    <string name="phone">phone:</string>
+    <string name="email">email:</string>
+    <string name="name">name</string>
+    <string name="please_check_your_username">* Please check your username</string>
+    <string name="please_check_your_password">* Please check your password</string>
+    <string name="address">address</string>
+    <string name="company">company</string>
+    <string name="to_view_the_password">to view the password</string>
+    <string name="enter_your_password">Enter your password...</string>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ui.LoginActivity">
+
+    <TextView
+        android:id="@+id/sign_in_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        style="@style/text_color"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_parent_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColorHint="#B11A1A"
+        app:helperTextTextColor="@color/black"
+        android:hint="@string/enter_username"
+        android:layout_gravity="center"
+        app:boxBackgroundMode="outline"
+        app:boxBackgroundColor="@color/black"
+        app:helperText="Required*">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_id"
+            android:layout_width="300dp"
+            android:layout_height="53dp"
+            android:inputType="text"
+            android:textColor="#ED5C1D5C"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/username_msg_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:textColor="#ED1212"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"
+        android:text="@string/please_check_your_username"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_parent_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="#B11A1A"
+        android:hint="@string/enter_your_password"
+        android:layout_gravity="center"
+        app:helperText="Required*"
+        app:helperTextTextColor="@color/black"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_id"
+            android:layout_width="300dp"
+            android:layout_height="53dp"
+            android:inputType="textPassword"
+
+            android:textColor="#ED871C87"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/password_msg_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:textColor="#ED1212"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"
+        android:text="@string/please_check_your_password"/>
+
+    <Button
+        android:id="@+id/login_button_id"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_of_button"
+        android:text="@string/login"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+
+
+</LinearLayout>
